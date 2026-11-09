@@ -1,0 +1,33 @@
+{
+  "entity": {
+    "light": {
+      "floodlight": {
+        "default": "mdi:light-flood-down"
+      }
+    },
+    "number": {
+      "brightness": {
+        "default": "mdi:brightness-percent"
+      },
+      "on_time": {
+        "default": "mdi:timer-outline"
+      },
+      "sensitivity": {
+        "default": "mdi:motion-sensor"
+      }
+    },
+    "select": {
+      "mode": {
+        "default": "mdi:tune"
+      },
+      "sensor_active_when": {
+        "default": "mdi:brightness-4"
+      }
+    },
+    "sensor": {
+      "ambient_light_level": {
+        "default": "mdi:theme-light-dark"
+      }
+    }
+  }
+}

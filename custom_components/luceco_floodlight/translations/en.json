@@ -1,0 +1,71 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Luceco Floodlight",
+        "description": "Enter the floodlight's IP address. Give it a fixed address, for example with a DHCP reservation, so it does not change.",
+        "data": {
+          "host": "IP address"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Luceco Floodlight",
+        "description": "Enter the floodlight's new IP address.",
+        "data": {
+          "host": "IP address"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not talk to the floodlight. Check the IP address and that the device is not locked. The Home Assistant log has details.",
+      "unsupported": "The device answered but does not look like a Luceco smart floodlight."
+    },
+    "abort": {
+      "already_configured": "This floodlight is already configured.",
+      "reconfigure_successful": "The floodlight's address was updated.",
+      "wrong_device": "That address belongs to a different device."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "motion": {
+        "name": "Motion"
+      }
+    },
+    "number": {
+      "brightness": {
+        "name": "Light brightness"
+      },
+      "sensitivity": {
+        "name": "Sensitivity"
+      },
+      "on_time": {
+        "name": "Light on time"
+      }
+    },
+    "select": {
+      "mode": {
+        "name": "Mode",
+        "state": {
+          "sensor": "Sensor",
+          "manual": "Manual",
+          "dusk_to_dawn": "Dusk to dawn",
+          "night_glow": "Night glow"
+        }
+      },
+      "sensor_active_when": {
+        "name": "Sensor active when",
+        "state": {
+          "night": "Night",
+          "dusk": "Dusk",
+          "day": "Day"
+        }
+      }
+    },
+    "sensor": {
+      "ambient_light_level": {
+        "name": "Ambient light level"
+      }
+    }
+  }
+}
