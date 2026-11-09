@@ -1,13 +1,16 @@
 {
   "domain": "luceco_floodlight",
   "name": "Luceco Smart Floodlight",
+  "categories": [
+    "lighting.bulbs_lamps",
+    "sensors.motion_presence"
+  ]
   "codeowners": [],
   "config_flow": true,
   "dependencies": ["broadlink"],
   "documentation": "https://github.com/joshgibbons1/ha-luceco-floodlight",
   "integration_type": "device",
   "iot_class": "local_polling",
-  "homeassistant": ">=2026.10.2",
   "issue_tracker": "https://github.com/joshgibbons1/ha-luceco-floodlight/issues",
   "requirements": [],
   "version": "0.4.0"
